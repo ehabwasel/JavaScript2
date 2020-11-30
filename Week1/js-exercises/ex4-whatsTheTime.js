@@ -10,9 +10,31 @@
   4. Have the function execute when it 's loading in the browser
 
  */
-
+//time function 
 function displayCurrentTime() {
-  // your code goes in here
-}
+  var time = new Date();
+  var hrs = time.getHours();
+  var mis = time.getMinutes();
+  var secs = time.getSeconds();
 
+  hrs = checkTime(hrs);
+  mis = checkTime(mis);
+  secs = checkTime(secs);
+  
+  //declare paragraph to add the time 
+  const para=document.createElement("P");
+  document.body.appendChild(para);
+  para.id="time";
+  document.getElementById("time").innerHTML = "Time now is   "+hrs + ":" + mis + ":" + secs;
+}
+// to add zero in case of gitting in digit
+function checkTime(m) {
+  if (m < 10) {
+    m = "0" + m;
+  }
+  return m;
+}
+//set time interval every 1 second
 setInterval(displayCurrentTime, 1000);
+//call the function 
+displayCurrentTime();

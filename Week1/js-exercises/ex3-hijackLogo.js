@@ -1,6 +1,5 @@
-/**
- 
- ** Exercise 3: The logo hijack **
+
+ /** Exercise 3: The logo hijack **
  
  No homepage is safe from the logo bandit!Everytime he sees a Google Logo he replaces it with a logo from HackYourfuture instead: https: //www.hackyourfuture.dk/static/logo-dark.svg.
 
@@ -9,11 +8,13 @@
  
  1. Find out how to select the element that contains the Google logo, and store it in a variable.
  2. Modify the source and sourceset of the logo so that it 's replaced by the HackYourFuture logo instead.
-
+            
  */
 
 function hijackGoogleLogo() {
-  // your code goes in here
-}
-
-hijackGoogleLogo();
+      // your code goes in here
+    const image = document.getElementById('hplogo');
+    image.src= `https://www.hackyourfuture.dk/static/logo-dark.svg`;
+    image.srcset= `https://www.hackyourfuture.dk/static/logo-dark.svg`;
+    } 
+    hijackGoogleLogo()
