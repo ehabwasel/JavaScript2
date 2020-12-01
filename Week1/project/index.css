@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffa500;
+  color: #ffa500;
+  font-size: 30px;
+  font-family: 'Noto Serif', serif;
+  text-align: center;
+}
+.quotes-container {
+  position: relative;
+  max-width: 80%;
+  background-color: white;
+  height: 50vh;
+  margin: 10% auto;
+  padding: 30px 20px;
+}
+
+#auther {
+  float: right;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin: 10rem 5rem;
+}
+
+#btn-1 {
+  color: white;
+  background-color: #ffa500;
+  border: none;
+  padding: 10px;
+  font-size: 25px;
+  outline: none;
+  cursor: pointer;
+}
+i {
+  color: #ffa500;
+}
