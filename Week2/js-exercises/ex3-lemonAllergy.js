@@ -9,13 +9,28 @@
   Avoid using for loop or forEach.
   Output a string that says: "My mom bought me a fruit basket, containing [array of fruits] !"
 
- */
-
-
-function takeOutLemons(basket) {
+  first using arrow function */
+function takeOutLemons() {
   // your code goes in here. The output is a string 
-}
+  return fruitBasket.filter(lemon => lemon != 'Lemon')
+  
+};
 
 const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];
 
 console.log(takeOutLemons(fruitBasket));
+
+// // using traditional way
+
+// function takeOutLemons() {
+// //   // your code goes in here. The output is a string 
+// //   return fruitBasket.filter(function (item) {
+// //     return item !== 'Lemon';
+// //   })
+  
+// // };
+
+// // const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];
+
+// // console.log(takeOutLemons(fruitBasket));
+
