@@ -32,8 +32,11 @@ function add(){
   reset()
 }
 function remove(){
-  minute--;
-  setSessionLength.textContent=(minute);
+  if (minute > 1) {
+    minute--;
+    setSessionLength.textContent = minute;
+    
+  }
   reset()
 }
 //this function for set minutes to new minutes
@@ -54,14 +57,13 @@ function remove(){
   }
  // this is the count dwon function 
   function count(){
-    if (time.getMinutes()===0 &&time.getSeconds()===0){
-      minutesIndicator.textContent="time out";
-      secondsIndicator.textContent=""
+    if (time.getMinutes() === 0 && time.getSeconds() === 0) {
+      minutesIndicator.textContent = 'Time`s up!';
+      secondsIndicator.textContent = '';
+    } else {
+      time.setSeconds(time.getSeconds() - interval / 1000);
+      showTime();
     }
-    else{
-      time.setSeconds(time.getSeconds()-interval/1000);
-    }
-    showTime()
   }
   //this function to decrisw the seconds by one every time
   function play(){
