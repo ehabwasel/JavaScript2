@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "type": "npm",
+      "script": "test-map-filter",
+      "problemMatcher": [],
+      "label": "npm: test-map-filter",
+      "detail": "jest map-filter"
+    }
+  ]
+}

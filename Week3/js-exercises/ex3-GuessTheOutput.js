@@ -18,4 +18,8 @@ const x = (function () {
   };
 })();
 
-x();
+x();//It turnes 12
+
+/*The Explination 
+ It will alert the value of a = 12 because you declared (a) in the golobal scope so you have right to accsess its value from the expression function.(x)..
+second you have an anonomous function that has a coluser for the outer function and it takes the value of (a) as 12 because its a closuer function so when we run a function we will get 12 */
