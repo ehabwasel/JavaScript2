@@ -37,7 +37,7 @@ function calculateTip(){
   // let   total = (billAmount * serviceQuality) / numPeople;
   // total = Math.round(total * 100) / 100;
   // total = total.toFixed(2);
-  //and i also would change the value of service in html file
+  //and i also would change the value of service in html file.
   
 
   //Display the tip!
