@@ -1,0 +1,85 @@
+body {
+  background-color: #dfdada;
+  background-size: cover;
+}
+
+#container {
+  width: 350px;
+  margin: 40px auto 0;
+  padding: 50px;
+  box-sizing: border-box;
+  background: white;
+  box-shadow: 0 10px 15px -8px #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  border-bottom: solid 1px #ddd;
+}
+
+form {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin: 25px 0;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  padding: 8px;
+  margin: 15px 15px;
+}
+
+form input[type='text'] {
+  width: 200px;
+}
+
+button {
+  background: #be161d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  width: 100px;
+}
+
+button:hover {
+  background: #4c2827;
+  color: white;
+}
+
+#totalTip {
+  font-size: 50px;
+  margin-top: 40px;
+  color: rgb(25, 25, 65);
+}
+
+#totalTip:before {
+  content: 'Tip amount';
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+  color: rgb(25, 25, 65);
+}
+
+#totalTip sup {
+  font-size: 24px;
+  top: -18px;
+}
+
+#totalTip small {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  color: rgb(25, 25, 65);
+}
