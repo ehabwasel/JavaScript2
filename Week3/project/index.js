@@ -28,9 +28,16 @@ function calculateTip(){
 
   }
 
-  
+  //this is the amount of the bill
   let  total = (parseFloat(billAmount)+parseFloat (serviceQuality)) / numPeople;
-  console.log(total)
+  // console.log(total)
+
+
+   //this is the second method if ypu want to calculate the amount of tip only not the total amount of bill  
+  // let   total = (billAmount * serviceQuality) / numPeople;
+  // total = Math.round(total * 100) / 100;
+  // total = total.toFixed(2);
+  //and i also would change the value of service in html file
   
 
   //Display the tip!
