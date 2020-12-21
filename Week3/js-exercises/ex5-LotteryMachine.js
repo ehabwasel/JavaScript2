@@ -31,11 +31,12 @@ Don't you just love the thrill of the lottery? What if I told you we can make ou
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
 
-  startIndex = 10;
-  stopIndex = 15;
-
   for (let i = startIndex; i <= stopIndex; i++){
     numbers.push(i)
+  }
+
+  for (let i = startIndex; i <= stopIndex; i++){
+    
     
     if (i % 3 === 0 && i % 5 === 0) {
       threeCallback()
